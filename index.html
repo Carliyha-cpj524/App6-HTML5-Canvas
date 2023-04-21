@@ -39,20 +39,20 @@ alert("This file last modified " + docMod); // generates alert box with time sta
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 
 function draw_Rectangle() {
-	var canvas = document.getElementById("m");
+	var canvas = document.getElementById("c");
 	var context = canvas.getContext("2d");
 	context.fillStyle = "orange";
 	context.fillRect(50, 25, 150, 250);
 }
 
 function draw_Name() {
-	var canvas = document.getElementById("m");
+	var canvas = document.getElementById("c");
 	var context = canvas.getContext("2d");
 	context.fillText("Carliyha Jones", 50,15);
 	context.font = "bold 12px sans-serif";
 }
 function draw_Image() {
-	var canvas = document.getElementById("m");
+	var canvas = document.getElementById("c");
 	var context = canvas.getContext("2d");
 	var panda = new Image();
 	panda.src = "https://media.istockphoto.com/id/1195743934/vector/cute-panda-character-vector-design.jpg?s=612x612&w=0&k=20&c=J3ht-bKADmsXvF6gFIleRtfJ6NGhXnfIsrwlsUF8w80=";
@@ -62,7 +62,7 @@ function draw_Image() {
 	
 }
 function clear_Canvas() {
-	var canvas = document.getElementById("m");
+	var canvas = document.getElementById("c");
 	var context = canvas.getContext("2d");
 	canvas.width = canvas.width;
 }
@@ -95,7 +95,7 @@ function clear_Canvas() {
 </div>
 	
 <div id="content" class="w3-container">
-	<canvas id="m" width="300" height="300"style="border:1px solid #00ff00;"></canvas> 
+	<canvas id="c" width="300" height="300"style="border:1px solid #00ff00;"></canvas> 
 
 <div/>
 		
