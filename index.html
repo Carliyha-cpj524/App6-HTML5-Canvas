@@ -38,25 +38,25 @@ var docMod = document.lastModified; // loads last modified time stamp into docMo
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 
-function draw_rectangle() {
+function draw_Rectangle() {
 	var canvas = document.getElementById("m");
 	var context = canvas.getContext("2d");
 	context.fillRect(50, 25, 150, 100);
 }
 
-function draw_name() {
+function draw_Name() {
 	var canvas = document.getElementById("m");
-	var context = b_canvas.getContext("2d");
+	var context = canvas.getContext("2d");
 	context.fillText("Carliyha Jones", 248, 43);
 	context.font = "bold 12px sans-serif";
 }
-function draw_image() {
+function draw_Image() {
 	var canvas = document.getElementById("m");
 	var context = canvas.getContext("2d");
 	var panda = document.getElementByID("panda")
 	context.drawImage(panda,50,50,50,50)
 }
-function clear_canvas() {
+function clear_Canvas() {
 	var canvas = document.getElementById("m");
 	var context = canvas.getContext("2d");
 	context.fillRect(50, 25, 150, 100);
@@ -105,10 +105,10 @@ function clear_canvas() {
 
 <div/>
 
-	<button onclick="draw_rectangle();">click to draw rectangle</button> <!added rectangle button-->
-	<button onclick="draw_name();">click for my name</button> <!added name button-->
-	<button onclick="draw_image();">click to panda</button> <!added panda image button-->
-	<button onclick="clear_canvas();">click to clear canvas</button> <!added clear canvas button-->
+	<button onclick="draw_Rectangle();">click to draw rectangle</button> <!added rectangle button-->
+	<button onclick="draw_Name();">click for my name</button> <!added name button-->
+	<button onclick="draw_Image();">click to panda</button> <!added panda image button-->
+	<button onclick="clear_Canvas();">click to clear canvas</button> <!added clear canvas button-->
 <div/>
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
