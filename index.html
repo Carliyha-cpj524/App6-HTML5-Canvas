@@ -42,12 +42,13 @@ function draw_Rectangle() {
 	var canvas = document.getElementById("m");
 	var context = canvas.getContext("2d");
 	context.fillRect(50, 25, 150, 250);
+	context.fillStyle = "green";
 }
 
 function draw_Name() {
 	var canvas = document.getElementById("m");
 	var context = canvas.getContext("2d");
-	context.fillText("Carliyha Jones", 248, 43);
+	context.fillText("Carliyha Jones", 50, 150);
 	context.font = "bold 12px sans-serif";
 }
 function draw_Image() {
