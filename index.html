@@ -54,12 +54,17 @@ function draw_Image() {
 	var canvas = document.getElementById("m");
 	var context = canvas.getContext("2d");
 	var panda = document.getElementByID("panda")
-	context.drawImage(panda,50,50,50,50)
+	var img = new image();
+	img.src = "https://media.istockphoto.com/id/1195743934/vector/cute-panda-character-vector-design.jpg?s=612x612&w=0&k=20&c=J3ht-bKADmsXvF6gFIleRtfJ6NGhXnfIsrwlsUF8w80=";
+	img.onload = function(){
+		context.drawImage(panda,50,50,50,50);
+	}
+	
 }
 function clear_Canvas() {
 	var canvas = document.getElementById("m");
 	var context = canvas.getContext("2d");
-	canvas.width = canvas.width ;
+	canvas.width = canvas.width;
 }
 	
 </script>
