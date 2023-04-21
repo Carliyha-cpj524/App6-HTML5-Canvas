@@ -39,25 +39,25 @@ alert("This file last modified " + docMod); // generates alert box with time sta
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 
 function draw_rectangle() {
-	var canvas = document.getElementById("b");
+	var canvas = document.getElementById("m");
 	var context = canvas.getContext("2d");
 	context.fillRect(50, 25, 150, 100);
 }
 
 function draw_name() {
-	var canvas = document.getElementById("b");
+	var canvas = document.getElementById("m");
 	var context = b_canvas.getContext("2d");
 	context.fillText("Carliyha Jones", 248, 43); // added name
 	context.font = "bold 12px sans-serif"; //added font
 }
 function draw_image() {
-	var canvas = document.getElementById("b");
+	var canvas = document.getElementById("m");
 	var context = canvas.getContext("2d");
 	var panda = document.getElementByID("panda") // panda image
 	context.drawImage(panda, 50, 50)
 }
 function clear_canvas() {
-	var canvas = document.getElementById("b");
+	var canvas = document.getElementById("m");
 	var context = canvas.getContext("2d");
 	context.fillRect(50, 25, 150, 100);
 }
