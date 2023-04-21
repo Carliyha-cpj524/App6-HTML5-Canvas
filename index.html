@@ -47,14 +47,14 @@ function draw_rectangle() {
 function draw_name() {
 	var canvas = document.getElementById("m");
 	var context = b_canvas.getContext("2d");
-	context.fillText("Carliyha Jones", 248, 43); // added name
-	context.font = "bold 12px sans-serif"; //added font
+	context.fillText("Carliyha Jones", 248, 43);
+	context.font = "bold 12px sans-serif";
 }
 function draw_image() {
 	var canvas = document.getElementById("m");
 	var context = canvas.getContext("2d");
-	var panda = document.getElementByID("panda") // panda image
-	context.drawImage(panda, 50, 50)
+	var panda = document.getElementByID("panda")
+	context.drawImage(panda,50,50,50,50)
 }
 function clear_canvas() {
 	var canvas = document.getElementById("m");
@@ -101,7 +101,7 @@ function clear_canvas() {
 <div/>
 
 <div id="content" class="w3-container>
-	<canvas id="m" width="300" height="300"style="border:1px solid #000000;"></canvas> 
+	<canvas id="m" width="300" height="300" style="border:1px solid #000000;"></canvas> 
 
 <div/>
 
