@@ -39,25 +39,26 @@ alert("This file last modified " + docMod); // generates alert box with time sta
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 
 function draw_rectangle() {
-	var b_canvas = document.getElementById("b");
-	var b_context = b_canvas.getContext("2d");
-	b_context.fillRect(50, 25, 150, 100);
+	var canvas = document.getElementById("b");
+	var context = b_canvas.getContext("2d");
+	context.fillRect(50, 25, 150, 100);
 }
 
 function draw_name() {
-	var b_canvas = document.getElementById("b");
-	var b_context = b_canvas.getContext("2d");
-	b_context.fillRect(50, 25, 150, 100);
+	var canvas = document.getElementById("b");
+	var context = b_canvas.getContext("2d");
+	context.fillText("Carliyha Jones", 248, 43);
+	context.font = "bold 12px sans-serif";
 }
 function draw_image() {
-	var b_canvas = document.getElementById("b");
-	var b_context = b_canvas.getContext("2d");
-	b_context.fillRect(50, 25, 150, 100);
+	var canvas = document.getElementById("b");
+	var context = b_canvas.getContext("2d");
+	context.fillRect(50, 25, 150, 100);
 }
-function Clear_canvas() {
-	var b_canvas = document.getElementById("b");
-	var b_context = b_canvas.getContext("2d");
-	b_context.fillRect(50, 25, 150, 100);
+function clear_canvas() {
+	var canvas = document.getElementById("b");
+	var context = b_canvas.getContext("2d");
+	context.fillRect(50, 25, 150, 100);
 }
 	
 </script>
